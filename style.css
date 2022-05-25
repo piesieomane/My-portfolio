@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+  border: 0;
+  margin: 0;
+  width: 374px;
+  font-family: 'Roboto' ,sans-serif;
+  height: 100vh;
+}
+
+img {
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  top: 0%;
+  box-shadow: 0.1rem .1rem rgba(245, 243, 243, 0.918);
+}
+
+.navbar {
+  display: flex;
+  width: 375px;
+  height: 48px;
+  padding: 14px 24px;
+  align-items: center;
+  justify-content: space-between; 
+}
+.navbar .my-logo {
+  font-family: 'Poppins' , sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #6070FF;
+}
+
+.nav-right {
+  display: flex;
+  align-content: flex-end;
+  margin-right: 30px;
+}
+
+section {
+  position: relative;
+  top: 75px;
+  flex-direction: column;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-family: 'Poppins', sans-serif;
+}
+
+section .name {
+  font-weight: 700;
+  font-size: 40px;
+  padding-right: 68px;
+  margin-bottom: 0px;
+  margin-top: 100px 
+}
+
+section .about {
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #344563;
+}
+
+section .social-media {
+  margin-top: 12px;
+  color: #7F8CFF;
+  height: 24px;
+}
+
+section .social-media-links {
+  display: flex;
+  margin-top: 10px;
+}
+
+section .icon-right {
+  margin-right: 20px;
+}
