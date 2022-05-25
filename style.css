@@ -17,10 +17,6 @@ a {
   text-decoration: none;
 }
 
-button {
-  border: white;
-  background-color: rgba(255, 255, 255, 0.836);
-}
 
 header {
   position: fixed;
