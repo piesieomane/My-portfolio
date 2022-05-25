@@ -5,7 +5,7 @@ body {
   border: 0;
   margin: 0;
   width: 374px;
-  font-family: 'Roboto' ,sans-serif;
+  font-family: 'Roboto', sans-serif;
   height: 100vh;
 }
 
@@ -16,7 +16,7 @@ img {
 nav {
   position: fixed;
   top: 0%;
-  box-shadow: 0.1rem .1rem rgba(245, 243, 243, 0.918);
+  box-shadow: 0.1rem 0.1rem rgba(245, 243, 243, 0.918);
 }
 
 .navbar {
@@ -25,13 +25,14 @@ nav {
   height: 48px;
   padding: 14px 24px;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
+
 .navbar .my-logo {
-  font-family: 'Poppins' , sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  color: #6070FF;
+  color: #6070ff;
 }
 
 .nav-right {
@@ -53,8 +54,8 @@ section .name {
   font-weight: 700;
   font-size: 40px;
   padding-right: 68px;
-  margin-bottom: 0px;
-  margin-top: 100px 
+  margin-bottom: 0;
+  margin-top: 100px;
 }
 
 section .about {
@@ -66,7 +67,7 @@ section .about {
 
 section .social-media {
   margin-top: 12px;
-  color: #7F8CFF;
+  color: #7F8Cff;
   height: 24px;
 }
 
