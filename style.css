@@ -4,7 +4,7 @@
 body {
   border: 0;
   margin: 0;
-  width: 374px;
+  width: 375px;
   font-family: 'Roboto', sans-serif;
   height: 5410px;
 }
@@ -76,7 +76,7 @@ header,
 }
 
 .round {
-  width: 340px;
+  width: 375px;
   padding-top: 50px;
 }
 
@@ -118,6 +118,7 @@ section .icon-right {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: minmax(150px, auto);
+  margin: 50px auto;
 }
 
 .works section {
@@ -242,7 +243,7 @@ section .icon-right {
 
 .about-myself {
   background-color: white;
-  width: 340px;
+  width: 370px;
   padding-top: 70px;
   background-image: none;
   margin-top: 60px;
