@@ -4,9 +4,13 @@
 body {
   border: 0;
   margin: 0;
-  width: 374px;
+  width: 375px;
   font-family: 'Roboto', sans-serif;
-  height: 100vh;
+  height: 5410px;
+}
+
+html {
+  background-color: #f3ecec;
 }
 
 img {
@@ -20,7 +24,9 @@ a {
 header {
   position: fixed;
   top: 0%;
+  z-index: 5;
   box-shadow: 0.1rem 0.1rem rgba(245, 243, 243, 0.918);
+  background: #fff;
 }
 
 .header {
@@ -56,10 +62,22 @@ section {
   padding-left: 24px;
   padding-right: 24px;
   font-family: 'Poppins', sans-serif;
-  background-image: url(images/header-shapes\ mobile.png);
+  background-image: url(images/header-shapes-mobile.png);
   background-repeat: no-repeat;
   background-position: 100px right;
   background-size: auto 600px;
+  border-radius: 0% 0% 0% 10%;
+  padding-bottom: 50px;
+}
+
+header,
+.round {
+  background-color: white;
+}
+
+.round {
+  width: 375px;
+  padding-top: 50px;
 }
 
 section .name {
@@ -93,4 +111,202 @@ section .social-media-links {
 
 section .icon-right {
   margin-right: 20px;
+}
+
+.works {
+  background-image: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(150px, auto);
+  margin: 50px auto;
+}
+
+.works section {
+  margin-bottom: 70px;
+  border-radius: 20px;
+  border: 0.2rem solid #e5e5e5;
+  border-color: #e5e5e531;
+  padding: 16px;
+  background-color: white;
+  background-image: none;
+  margin-left: 3px;
+}
+
+.works section .section-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  margin-top: 10px;
+  width: 200px;
+}
+
+.works section img {
+  width: auto;
+  cursor: pointer;
+}
+
+.works section .section-about {
+  display: flex;
+  height: 32px;
+  width: 300px;
+  margin-top: 4px;
+  align-items: center;
+  padding: 8px auto;
+  gap: 12px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.works section .section-about .size {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.works section .section-about .back-end {
+  color: #7a869a;
+  height: 16px;
+}
+
+.works section .section-about .date {
+  color: #7a869a;
+}
+
+.works section .section-about a {
+  color: #344563;
+  font-weight: 600;
+}
+
+.works section p {
+  color: #344563;
+  font-weight: 400;
+}
+
+.works section ul {
+  display: flex;
+  list-style: none;
+  align-items: flex-start;
+  margin-left: -40px;
+  gap: 8px;
+  height: 24px;
+}
+
+.works section ul li {
+  background-color: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #6070ff;
+}
+
+.about-myself button {
+  width: 120px;
+  height: 44px;
+  color: #6070ff;
+  background-color: white;
+  border-color: #6070ff;
+  border-radius: 10px;
+  border: 0.1rem solid;
+}
+
+.works section button {
+  width: 95px;
+  height: 44px;
+  color: #6070ff;
+  background-color: white;
+  border-color: #6070ff;
+  border-radius: 10px;
+  border: 0.1rem solid;
+}
+
+.about-myself button:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+.about-myself button:active {
+  background-color: #2230d2;
+  color: white;
+}
+
+.works section button:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+.works section button:active {
+  background-color: #2230d2;
+  color: white;
+}
+
+.about-myself {
+  background-color: white;
+  width: 370px;
+  padding-top: 70px;
+  background-image: none;
+  margin-top: 60px;
+  border-radius: 0% 10% 0% 0%;
+}
+
+.about-myself h2 {
+  width: 100px;
+}
+
+.about-myself .languages {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: -36px;
+}
+
+.about-myself .languages li {
+  display: flex;
+  gap: 12px;
+  padding: 9px 9px 9px 12px;
+  list-style: none;
+  background-color: #f7f7f9;
+  height: 66.72px;
+  align-items: center;
+}
+
+.about-myself .lang {
+  list-style: none;
+  margin-left: -33px;
+  width: 303px;
+}
+
+.about-myself .lang .frameworks,
+.skills {
+  box-shadow: 0.001rem 0.07rem #dfe1e6;
+  font-size: 20px;
+  font-weight: 500;
+  height: 72px;
+}
+
+.about-myself .lang .arrow-down {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about-myself .lang li .languages .javascript,
+.html,
+.css {
+  border-radius: 8px;
+}
+
+.about-myself .lang .arrow-down a img {
+  width: 12px;
+  height: 8px;
+}
+
+.about-myself .lang li .frameworks,
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
