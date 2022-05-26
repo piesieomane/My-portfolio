@@ -115,7 +115,7 @@ section .icon-right {
 .works {
   background-image: none;
   display: grid;
-  grid-template-columns:  1fr;
+  grid-template-columns: 1fr;
   grid-auto-rows: minmax(150px, auto);
 }
 
@@ -189,7 +189,7 @@ section .icon-right {
 }
 
 .works section ul li {
-  background-color: #eBeBff;
+  background-color: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
   font-family: 'Poppins', sans-serif;
@@ -203,7 +203,7 @@ section .icon-right {
   width: 120px;
   height: 44px;
   color: #6070ff;
-  background-color: white; 
+  background-color: white;
   border-color: #6070ff;
   border-radius: 10px;
   border: 0.1rem solid;
@@ -231,18 +231,20 @@ section .icon-right {
 .about-myself h2 {
   width: 100px;
 }
+
 .about-myself .languages {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin-left: -36px;
 }
+
 .about-myself .languages li {
   display: flex;
   gap: 12px;
   padding: 9px 9px 9px 12px;
   list-style: none;
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
   height: 66.72px;
   align-items: center;
 }
@@ -254,7 +256,7 @@ section .icon-right {
 }
 
 .about-myself .lang .frameworks, .skills {
-  box-shadow: 0.001rem 0.07rem #Dfe1e6;
+  box-shadow: 0.001rem 0.07rem #dfe1e6;
   font-size: 20px;
   font-weight: 500;
   height: 72px;
@@ -268,7 +270,7 @@ section .icon-right {
   font-weight: 500;
 }
 
-.about-myself> .lang> li> .languages> .javascript, .html, .css {
+.about-myself .lang li .languages .javascript, .html, .css {
   border-radius: 8px;
 }
 
@@ -277,7 +279,7 @@ section .icon-right {
   height: 8px;
 }
 
-.about-myself .lang li .frameworks,.skills {
+.about-myself .lang li .frameworks, .skills {
   display: flex;
   align-items: center;
   justify-content: space-between;
