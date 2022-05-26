@@ -70,7 +70,8 @@ section {
   padding-bottom: 50px;
 }
 
-header, .round {
+header,
+.round {
   background-color: white;
 }
 
@@ -255,7 +256,8 @@ section .icon-right {
   width: 303px;
 }
 
-.about-myself .lang .frameworks, .skills {
+.about-myself .lang .frameworks,
+.skills {
   box-shadow: 0.001rem 0.07rem #dfe1e6;
   font-size: 20px;
   font-weight: 500;
@@ -270,7 +272,9 @@ section .icon-right {
   font-weight: 500;
 }
 
-.about-myself .lang li .languages .javascript, .html, .css {
+.about-myself .lang li .languages .javascript,
+.html,
+.css {
   border-radius: 8px;
 }
 
@@ -279,7 +283,8 @@ section .icon-right {
   height: 8px;
 }
 
-.about-myself .lang li .frameworks, .skills {
+.about-myself .lang li .frameworks,
+.skills {
   display: flex;
   align-items: center;
   justify-content: space-between;
