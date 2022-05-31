@@ -348,3 +348,50 @@ section .icon-right {
   flex-direction: column;
   gap: 15px;
 }
+
+.contact-form input{
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 15px 16px;
+  width: 327px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #172B4D;
+}
+
+.contact-form textarea {
+  background: #FFFFFF;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  min-width: 327px;
+  min-height: 170px;
+  padding: 15px 16px;
+}
+
+.contact-form textarea {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px
+}
+
+#contact-btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #6070FF;
+  width: 140px;
+  height: 48px;
+}
