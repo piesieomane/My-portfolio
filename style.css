@@ -319,6 +319,8 @@ section .icon-right {
   width: 375px;
   padding-left: 24px;
   padding-right: 24px;
+  border-radius: 80px 0px 0px 0px;
+  height: 760px;
 }
 
 .contact-me footer h2 {
@@ -331,7 +333,6 @@ section .icon-right {
   justify-content: center;
   margin-top: 103px;
   padding-top: 103px;
-  margin-left: -38px;
 }
 
 .contact-me footer p {
@@ -340,6 +341,7 @@ section .icon-right {
   font-size: 20px;
   width: 327px;
   text-align: center;
+  margin-left: 24px;
 }
 
 .contact-me footer form {
@@ -349,37 +351,41 @@ section .icon-right {
   gap: 15px;
 }
 
-.contact-form input{
+.contact-form input {
   border-radius: 8px;
   border: none;
   outline: none;
   padding: 15px 16px;
   width: 327px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
   display: flex;
   align-items: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .contact-form textarea {
-  background: #FFFFFF;
-  border: 1px solid #CFD8DC;
+  background: #ffffff;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   min-width: 327px;
   min-height: 170px;
   padding: 15px 16px;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
 }
 
-.contact-form textarea {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
+.contact-form textarea::placeholder {
   font-size: 15px;
-  line-height: 24px
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
 }
 
 #contact-btn {
@@ -391,7 +397,21 @@ section .icon-right {
   justify-content: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #6070FF;
+  color: #6070ff;
   width: 140px;
   height: 48px;
+}
+
+#contact-btn:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+#contact-btn:active {
+  background-color: #2230d2;
+  color: white;
+}
+
+.contact-me .shape {
+  margin: 38px 120px;
 }
