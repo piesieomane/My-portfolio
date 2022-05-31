@@ -11,6 +11,7 @@ body {
 
 html {
   background-color: #f3ecec;
+  overflow-x: hidden;
 }
 
 img {
@@ -83,7 +84,7 @@ header,
 section .name {
   font-weight: 700;
   font-size: 40px;
-  padding-right: 68px;
+  padding-right: 168px;
   margin-bottom: 0;
   margin-top: 100px;
 }
@@ -93,6 +94,7 @@ section .about {
   font-weight: 400;
   font-size: 16px;
   color: #344563;
+  padding-right: 40px;
 }
 
 section .social-media {
@@ -243,7 +245,7 @@ section .icon-right {
 
 .about-myself {
   background-color: white;
-  width: 370px;
+  width: 375px;
   padding-top: 70px;
   background-image: none;
   margin-top: 60px;
@@ -309,4 +311,107 @@ section .icon-right {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.contact-me {
+  background-color: #6070ff;
+  top: -29px;
+  width: 375px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 80px 0 0 0;
+  height: 760px;
+}
+
+.contact-me footer h2 {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-top: 103px;
+  padding-top: 103px;
+}
+
+.contact-me footer p {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  width: 327px;
+  text-align: center;
+  margin-left: 24px;
+}
+
+.contact-me footer form {
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input {
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 15px 16px;
+  width: 327px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+}
+
+.contact-form textarea {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  min-width: 327px;
+  min-height: 170px;
+  padding: 15px 16px;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.contact-form textarea::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+#contact-btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  width: 140px;
+  height: 48px;
+}
+
+#contact-btn:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+#contact-btn:active {
+  background-color: #2230d2;
+  color: white;
+}
+
+.contact-me .shape {
+  margin: 38px 120px;
 }
