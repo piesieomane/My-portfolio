@@ -319,7 +319,7 @@ section .icon-right {
   width: 375px;
   padding-left: 24px;
   padding-right: 24px;
-  border-radius: 80px 0px 0px 0px;
+  border-radius: 80px 0 0 0;
   height: 760px;
 }
 
@@ -368,7 +368,7 @@ section .icon-right {
 }
 
 .contact-form textarea {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   min-width: 327px;
