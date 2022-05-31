@@ -11,6 +11,7 @@ body {
 
 html {
   background-color: #f3ecec;
+  overflow-x: hidden;
 }
 
 img {
@@ -330,14 +331,20 @@ section .icon-right {
   justify-content: center;
   margin-top: 103px;
   padding-top: 103px;
+  margin-left: -38px;
 }
 
 .contact-me footer p {
   color: white;
   font-weight: 400;
   font-size: 20px;
+  width: 327px;
+  text-align: center;
 }
 
 .contact-me footer form {
   width: 327px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
