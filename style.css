@@ -83,7 +83,7 @@ header,
 section .name {
   font-weight: 700;
   font-size: 40px;
-  padding-right: 68px;
+  padding-right: 168px;
   margin-bottom: 0;
   margin-top: 100px;
 }
@@ -93,6 +93,7 @@ section .about {
   font-weight: 400;
   font-size: 16px;
   color: #344563;
+  padding-right: 40px;
 }
 
 section .social-media {
@@ -243,7 +244,7 @@ section .icon-right {
 
 .about-myself {
   background-color: white;
-  width: 370px;
+  width: 375px;
   padding-top: 70px;
   background-image: none;
   margin-top: 60px;
@@ -309,4 +310,34 @@ section .icon-right {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.contact-me {
+  background-color: #6070ff;
+  top: -29px;
+  width: 375px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.contact-me footer h2 {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-top: 103px;
+  padding-top: 103px;
+}
+
+.contact-me footer p {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.contact-me footer form {
+  width: 327px;
 }
