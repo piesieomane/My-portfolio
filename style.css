@@ -61,7 +61,7 @@ header {
 }
 
 section {
-  width: 100%; 
+  width: 100%;
   position: relative;
   flex-direction: column;
   padding-left: 24px;
@@ -460,10 +460,6 @@ section .icon-right {
     padding-right: 9.86%;
   }
 
-  .contact-me {
-    padding: 0 30.27%;
-  }
-
   .works .cards {
     display: grid;
     max-width: 100%;
@@ -490,6 +486,7 @@ section .icon-right {
   }
 
   .contact-me {
+    padding: 0 30.27%;
     width: 100%;
     background-image: url(images/contact-form-background-shapes@2x.png);
     background-repeat: no-repeat;
