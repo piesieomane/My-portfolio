@@ -448,6 +448,10 @@ section .icon-right {
     gap: 30px;
   }
 
+  .header .nav-links ul li a {
+    color: #344563;
+  }
+
   .round {
     padding-left: 18%;
     padding-right: 18%;
