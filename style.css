@@ -427,13 +427,13 @@ section .icon-right {
   }
 
   .header .nav-right {
-   display: none;
+    display: none;
   }
 
   .nav-links {
     display: initial;
   }
-  
+
   .header .nav-links ul {
     list-style: none;
     display: flex;
@@ -475,7 +475,7 @@ section .icon-right {
   }
 
   .works .cards-reverse {
-   order: -1; 
+    order: -1;
   }
 
   .about-myself {
@@ -512,4 +512,4 @@ section .icon-right {
     margin: auto;
   }
 
-  }
+}
