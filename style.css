@@ -9,12 +9,10 @@ body {
   border: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  height: 5410px;
 }
 
 html {
   background-color: #f3ecec;
-  /* overflow-x: hidden; */
 }
 
 img {
@@ -56,7 +54,6 @@ header {
 .nav-right {
   display: flex;
   align-content: flex-end;
-  /* margin-right: 45px; */
 }
 
 .nav-links1 {
@@ -93,7 +90,6 @@ section .name {
   font-size: 40px;
   padding-right: 168px;
   margin-bottom: 0;
-  /* margin-top: 100px; */
 }
 
 section .about {
@@ -344,7 +340,6 @@ section .icon-right {
   color: white;
   align-items: center;
   justify-content: center;
-  margin-top: 103px;
   padding-top: 103px;
 }
 
@@ -352,13 +347,10 @@ section .icon-right {
   color: white;
   font-weight: 400;
   font-size: 20px;
-  /* width: 327px; */
   text-align: center;
-  /* margin-left: 24px; */
 }
 
 .contact-me footer form {
-  /* width: 327px; */
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -369,7 +361,6 @@ section .icon-right {
   border: none;
   outline: none;
   padding: 15px 16px;
-  /* width: 327px; */
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -432,12 +423,11 @@ section .icon-right {
 
 @media (min-width: 768px) {
   .header {
-    padding-left: 9.86%;
-    padding-right: 9.86%;
+    padding: 0 9.86%;
   }
 
   .header .nav-right {
-   display: none; 
+   display: none;
   }
 
   .nav-links {
@@ -449,7 +439,6 @@ section .icon-right {
     display: flex;
     flex-direction: row;
     align-content: flex-end;
-    /* margin-right: 18.86%; */
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 15px;
@@ -470,9 +459,7 @@ section .icon-right {
   }
 
   .contact-me {
-    padding-left: 30.27%;
-    padding-right: 30.37%;
-    top: -1%;
+    padding: 0 30.27%;
   }
 
   .works .cards {
@@ -488,7 +475,7 @@ section .icon-right {
   }
 
   .works .cards-reverse {
-    grid-auto-flow: dense;
+   order: -1; 
   }
 
   .about-myself {
@@ -519,6 +506,10 @@ section .icon-right {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  #contact-btn {
+    margin: auto;
   }
 
   }
