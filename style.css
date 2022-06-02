@@ -448,6 +448,15 @@ section .icon-right {
     gap: 30px;
   }
 
+  .header .my-logo:hover {
+    transform: rotate(360deg);
+    transition: 1s ease-in-out;
+  }
+
+  .works .cards button {
+    transition: .4s linear;
+  }
+
   .header .nav-links ul li a {
     color: #344563;
   }
@@ -505,6 +514,7 @@ section .icon-right {
     display: grid;
     grid-template-columns: repeat(3, 122px);
     grid-template-rows: 120px;
+    transform: rotate(360deg);
   }
 
   .about-myself .lang li .languages {
