@@ -69,7 +69,7 @@ section {
   font-family: 'Poppins', sans-serif;
   background-image: url(images/Header-bg@2x.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: calc(100%);
   border-radius: 0% 0% 0% 10%;
   padding-bottom: 50px;
 }
@@ -493,7 +493,7 @@ section .icon-right {
     width: 100%;
     background-image: url(images/contact-form-background-shapes@2x.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: calc(100%);
   }
 
   .contact-me .shape {
