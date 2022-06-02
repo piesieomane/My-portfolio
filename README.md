@@ -10,8 +10,8 @@
 
 ## Getting Started
 
-**Hello Microverse is a project given to micronaut to test thier knowledge on linters**
-**And also to produce a well arranged documentation on their code.**
+**This is a project assigned to me by Microverse. This project says a lot about my projects**
+**My portfolio consist of various projects and the associated languages I used to build them**
 
 To get a local copy up and running follow these simple example steps.
 

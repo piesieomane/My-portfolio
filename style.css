@@ -61,16 +61,15 @@ header {
 }
 
 section {
+  width: 100%; 
   position: relative;
-  top: 0.85%;
   flex-direction: column;
   padding-left: 24px;
   padding-right: 24px;
   font-family: 'Poppins', sans-serif;
-  background-image: url(images/header-shapes-mobile.png);
+  background-image: url(images/Header-bg@2x.png);
   background-repeat: no-repeat;
-  background-position: 100px right;
-  background-size: cover;
+  background-size: contain;
   border-radius: 0% 0% 0% 10%;
   padding-bottom: 50px;
 }
@@ -82,7 +81,10 @@ header,
 
 .round {
   min-width: 375px;
-  padding-top: 50px;
+}
+
+.round .piesie {
+  padding-top: 241px;
 }
 
 section .name {
@@ -485,6 +487,13 @@ section .icon-right {
     grid-template-columns: repeat(2, 1fr);
     padding-left: 9.86%;
     padding-right: 9.86%;
+  }
+
+  .contact-me {
+    width: 100%;
+    background-image: url(images/contact-form-background-shapes@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .contact-me .shape {
