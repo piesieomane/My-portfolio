@@ -222,6 +222,7 @@ section .icon-right {
   border-color: #6070ff;
   border-radius: 10px;
   border: 0.1rem solid;
+  transition: 0.5s;
 }
 
 .works section button {
@@ -406,6 +407,7 @@ section .icon-right {
   color: #6070ff;
   width: 140px;
   height: 48px;
+  transition: 0.5s;
 }
 
 #contact-btn:hover {
@@ -446,6 +448,15 @@ section .icon-right {
     font-size: 15px;
     color: #344563;
     gap: 30px;
+  }
+
+  .header .my-logo:hover {
+    transform: rotate(360deg);
+    transition: 1s ease-in-out;
+  }
+
+  .works .cards button {
+    transition: 0.4s linear;
   }
 
   .header .nav-links ul li a {
@@ -505,6 +516,7 @@ section .icon-right {
     display: grid;
     grid-template-columns: repeat(3, 122px);
     grid-template-rows: 120px;
+    transform: rotate(360deg);
   }
 
   .about-myself .lang li .languages {
