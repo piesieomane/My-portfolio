@@ -454,7 +454,7 @@ section .icon-right {
   }
 
   .works .cards button {
-    transition: .4s linear;
+    transition: 0.4s linear;
   }
 
   .header .nav-links ul li a {
