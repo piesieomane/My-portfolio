@@ -21,6 +21,10 @@ To get access to this repository, move to "My-portfolio" repository, and then ei
 clone onto your local machine.
 To clone checkout this documentation on github (https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
+### Live Demo
+
+[My-Portfolio-Page](https://piesieomane.github.io/My-portfolio/)
+
 ## Authors
 
 👤 **Author1**
