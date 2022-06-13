@@ -161,7 +161,6 @@ section .icon-right {
   width: 300px;
   margin-top: 4px;
   align-items: center;
-  padding: 8px auto;
   gap: 12px;
   font-family: "Poppins", sans-serif;
 }
@@ -551,21 +550,15 @@ section .icon-right {
 }
 
 @keyframes growDown {
-  /* 0% {
-    transform: scaleY(0);
-  }
-  80% {
-    transform: scaleY(1.05);
-  }
-  100% {
-    transform: scaleY(1);
-  } */
+
   0% {
     transform: rotateX(-90deg);
   }
+
   70% {
     transform: rotateX(20deg);
   }
+
   100% {
     transform: rotateX(0deg);
   }
@@ -575,34 +568,29 @@ section .icon-right {
   display: block;
 }
 
-/* .menu {
-  height: 100vh;
-  display: block;
-} */
-
-.menu li {
+.menu .menu-li {
   list-style-type: none;
   margin-right: 20%;
   margin-bottom: 40px;
   margin-top: 13%;
 }
 
-.menu a {
+.menu .nav-link {
   color: #fff;
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
 }
 
-.menu a:hover {
+.menu .nav-link:hover {
   color: #6070ff;
   background-color: #fff;
   font-size: 34px;
 }
 
-.menu img {
+.menu .xicon {
   display: flex;
   align-self: flex-end;
   margin-left: 86%;
