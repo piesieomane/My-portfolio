@@ -588,12 +588,18 @@ section .icon-right {
 }
 
 .menu a {
-  color: #ffffff;
+  color: #fff;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
+}
+
+.menu a:hover {
+  color: #6070ff;
+  background-color: #fff;
+  font-size: 34px;
 }
 
 .menu img {
