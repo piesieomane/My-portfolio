@@ -7,6 +7,7 @@
 ## Built With
 
 - Html/Css
+- Javascript
 
 ## Getting Started
 
