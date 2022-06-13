@@ -550,7 +550,6 @@ section .icon-right {
 }
 
 @keyframes growDown {
-
   0% {
     transform: rotateX(-90deg);
   }
