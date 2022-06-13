@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,11 +8,12 @@
 body {
   border: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
   background-color: #f3ecec;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -41,7 +42,7 @@ header {
 }
 
 .header .my-logo {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 18px;
   color: #6070ff;
@@ -66,7 +67,7 @@ section {
   flex-direction: column;
   padding-left: 24px;
   padding-right: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-image: url(images/Header-bg@2x.png);
   background-repeat: no-repeat;
   background-size: calc(100%);
@@ -138,7 +139,7 @@ section .icon-right {
 }
 
 .works section .section-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 32px;
   margin-top: 10px;
@@ -162,7 +163,7 @@ section .icon-right {
   align-items: center;
   padding: 8px auto;
   gap: 12px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .works section .section-about .size {
@@ -207,7 +208,7 @@ section .icon-right {
   background-color: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -337,7 +338,7 @@ section .icon-right {
 
 .contact-me footer h2 {
   display: flex;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 40px;
   color: white;
@@ -364,7 +365,7 @@ section .icon-right {
   border: none;
   outline: none;
   padding: 15px 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -384,14 +385,14 @@ section .icon-right {
   line-height: 24px;
   font-size: 15px;
   font-weight: 400;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
 }
 
 .contact-form textarea::placeholder {
   font-size: 15px;
   font-weight: 400;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
 }
 
@@ -443,7 +444,7 @@ section .icon-right {
     display: flex;
     flex-direction: row;
     align-content: flex-end;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 15px;
     color: #344563;
@@ -533,4 +534,71 @@ section .icon-right {
   #contact-btn {
     margin: auto;
   }
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(96, 112, 255, 0.8);
+  backdrop-filter: blur(4px);
+  height: 100vh;
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+@keyframes growDown {
+  /* 0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.05);
+  }
+  100% {
+    transform: scaleY(1);
+  } */
+  0% {
+    transform: rotateX(-90deg);
+  }
+  70% {
+    transform: rotateX(20deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.menu.visible {
+  display: block;
+}
+
+/* .menu {
+  height: 100vh;
+  display: block;
+} */
+
+.menu li {
+  list-style-type: none;
+  margin-right: 20%;
+  margin-bottom: 40px;
+  margin-top: 13%;
+}
+
+.menu a {
+  color: #ffffff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.menu img {
+  display: flex;
+  align-self: flex-end;
+  margin-left: 86%;
+  margin-top: 7.5%;
 }
