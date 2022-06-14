@@ -1,4 +1,3 @@
-const seeProject = document.querySelector('.see-btn');
 const projects = [
   {
     name: 'Tonic',
@@ -57,13 +56,13 @@ projects.forEach((element, i) => {
   const p = document.createElement('p');
   const a = document.createElement('a');
 
-  //working on image in the card
+  // working on image in the card
   image.src = element.img;
   image.classList.add('cards-pic');
   image.setAttribute('alt', 'Portfolio first card');
 
   miniDiv.classList.add('section-about');
-  //miniDiv children
+  // miniDiv children
   a.setAttribute('class', 'size');
   a.setAttribute('href', '#');
   a.innerText = 'CANOPY';
@@ -105,14 +104,14 @@ projects.forEach((element, i) => {
   });
 
   button.classList.add('see-btn');
-  //adding an id to the see-btn for every loop ***********
+  // adding an id to the see-btn for every loop ***********
   button.setAttribute('id', i);
   button.innerText = 'See Project';
 
   section.classList.add('cards');
 
-  //order of 2nd and 4th card
-  if (i % 2 != 0) {
+  // order of 2nd and 4th card
+  if (i % 2 !== 0) {
     div.classList.add('cards-reverse');
   }
 
@@ -122,15 +121,15 @@ projects.forEach((element, i) => {
   works.appendChild(section);
 });
 
-//the popup section ************
+// the popup section ************
 const seeProjectBtn = document.querySelectorAll('.see-btn');
 const popupw = document.querySelector('.bg-popup');
 const realPopup = document.querySelector('.popup');
 
 seeProjectBtn.forEach((n) => {
   n.addEventListener('click', (e) => {
-    const target_id = e.target.id;
-    const project = projects[target_id];
+    const targetId = e.target.id;
+    const project = projects[targetId];
 
     realPopup.innerHTML = `
       <div class= 'card-pop'>
@@ -160,52 +159,35 @@ seeProjectBtn.forEach((n) => {
             class="cards-pic"
           />
           </div>
+          
+
+          <div class = "flex-desktop">
         <p>
           ${project.description}
         </p>
+        <div>
          <ul class="languages">
-           <li class="${(function fun() {
-             projects.forEach((element, i) => {
-               projects[i].technologies.forEach((tech0, j) => {
-                 return (tech0 = projects[i].technologies[0]);
-               });
-             });
-           })()}">html</li>
+           <li class="${project.technologies[0]}">html</li>
           
-          <li class="${(function fun() {
-            projects.forEach((element, i) => {
-              projects[i].technologies.forEach((tech1, j) => {
-                return (tech1 = projects[i].technologies[1]);
-              });
-            });
-          })()}">css</li>
+          <li class="${project.technologies[0]}">css</li>
           
-          <li class="${(function fun() {
-            projects.forEach((element, i) => {
-              projects[i].technologies.forEach((tech2, j) => {
-                return (tech2 = projects[i].technologies[2]);
-              });
-            });
-          })()}">javascript</li>
+          <li class="${project.technologies[0]}">javascript</li>
          </ul>
 
          <div class = "btn-flex">
-         <button><a href='${
-           project.liveVersion
-         }' class = "btn-flex1" alt='Broken Link'>See Live <img
+         <button><a href='${project.liveVersion}' class = "btn-flex1" alt='Broken Link'>See Live <img
          src="images/Icon-power.png"
          alt="Illustration of a dot 8"
          class="size dot"
        /></a></button>
-         <button><a href='${
-           project.source
-         }' class = "btn-flex1" alt='Broken Link'>See Source <img
+         <button><a href='${project.source}' class = "btn-flex1" alt='Broken Link'>See Source <img
          src="images/icon-github.png"
          alt="Illustration of a dot 8"
          class="size dot"
        /></a></button>
          </div>
-
+        </div>
+      </div>
       </div>`;
     popupw.append(realPopup);
     popupw.classList.add('visible');

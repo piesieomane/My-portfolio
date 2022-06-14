@@ -533,6 +533,24 @@ section .icon-right {
   #contact-btn {
     margin: auto;
   }
+
+  .flex-desktop {
+    display: flex;
+    gap: 1%;
+  }
+
+  .card-pop {
+    width: 100%;
+    height: 85vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-pop .cards-pic {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 .menu {
@@ -561,6 +579,7 @@ section .icon-right {
   justify-content: center;
   align-items: center;
   display: none;
+  overflow-y: scroll;
 }
 
 .popup {
@@ -632,20 +651,20 @@ section .icon-right {
 .card-pop .section-title {
   margin-top: -10px;
   margin-bottom: -21.44px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
 }
 
 .card-pop .pic-container {
   width: 100%;
 }
 
-.card-pop .cards-pic {
-  width: 100%;
-}
-
-.flex-popup {
+.card-pop .flex-popup {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
+  align-items: center;
 }
 
 .card-pop .section-about {
@@ -668,6 +687,15 @@ section .icon-right {
   margin-left: -36px;
 }
 
+.card-pop h4 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
 .card-pop .languages .javascript,
 .html,
 .css {
@@ -684,6 +712,15 @@ section .icon-right {
   font-weight: 500;
   font-size: 12px;
   color: #6070ff;
+}
+
+.flex-desktop p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #344563;
 }
 
 /* .card-pop button {
