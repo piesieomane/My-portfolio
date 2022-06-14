@@ -91,8 +91,7 @@ projects.forEach((element, i) => {
   miniDiv.append(a, img, h41, img1, h4);
   miniDiv.classList.add('section-about');
 
-  p.innerText =
-    'A daily selection of privately personalized reads; no accounts or sign-ups required';
+  p.innerText = 'A daily selection of privately personalized reads; no accounts or sign-ups required';
 
   ul.classList.add('languages');
 
