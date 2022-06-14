@@ -549,6 +549,16 @@ section .icon-right {
   transform-origin: top center;
 }
 
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: blue;
+  opacity: 0;
+}
+
 @keyframes growDown {
   0% {
     transform: rotateX(-90deg);
