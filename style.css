@@ -138,6 +138,14 @@ section .icon-right {
   margin-left: 3px;
 }
 
+.card-pop .section-title {
+  margin-top: -10px;
+  margin-bottom: -21.44px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
 .works section .section-title {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -153,6 +161,19 @@ section .icon-right {
 
 .works section .cards-pic {
   width: 100%;
+}
+
+.card-pop .section-about {
+  display: flex;
+  height: 32px;
+  width: 300px;
+  margin-top: 4px;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
 }
 
 .works section .section-about {
@@ -187,6 +208,15 @@ section .icon-right {
 .works section .section-about a {
   color: #344563;
   font-weight: 600;
+}
+
+.flex-desktop p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #344563;
 }
 
 .works section p {
@@ -289,6 +319,13 @@ section .icon-right {
   list-style: none;
   margin-left: -33px;
   min-width: 303px;
+}
+
+.card-pop .languages .javascript,
+.html,
+.css {
+  border-radius: 8px;
+  list-style: none;
 }
 
 .about-myself .lang .frameworks,
@@ -648,14 +685,6 @@ section .icon-right {
   font-family: 'Poppins', sans-serif;
 }
 
-.card-pop .section-title {
-  margin-top: -10px;
-  margin-bottom: -21.44px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-}
-
 .card-pop .pic-container {
   width: 100%;
 }
@@ -667,19 +696,6 @@ section .icon-right {
   align-items: center;
 }
 
-.card-pop .section-about {
-  display: flex;
-  height: 32px;
-  width: 300px;
-  margin-top: 4px;
-  align-items: center;
-  gap: 12px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 16px;
-}
-
 .card-pop .languages {
   display: flex;
   list-style: none;
@@ -688,19 +704,12 @@ section .icon-right {
 }
 
 .card-pop h4 {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
-}
-
-.card-pop .languages .javascript,
-.html,
-.css {
-  border-radius: 8px;
-  list-style: none;
 }
 
 .card-pop .languages li {
@@ -712,15 +721,6 @@ section .icon-right {
   font-weight: 500;
   font-size: 12px;
   color: #6070ff;
-}
-
-.flex-desktop p {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  color: #344563;
 }
 
 /* .card-pop button {
