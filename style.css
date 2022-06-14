@@ -549,14 +549,26 @@ section .icon-right {
   transform-origin: top center;
 }
 
-.popup {
-  position: absolute;
+.bg-popup {
+  background-color: rgba(193, 199, 208, 0.8);
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: blue;
-  opacity: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.popup {
+  width: 90%;
+}
+
+.bg-popup.visible {
+  display: flex;
 }
 
 @keyframes growDown {
@@ -605,3 +617,101 @@ section .icon-right {
   margin-left: 86%;
   margin-top: 7.5%;
 }
+
+.card-pop {
+  border-radius: 20px;
+  border: 0.2rem solid #e5e5e5;
+  border-color: #e5e5e531;
+  padding: 16px;
+  background-color: white;
+  background-image: none;
+  margin-left: 3px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-pop .section-title {
+  margin-top: -10px;
+  margin-bottom: -21.44px;
+}
+
+.card-pop .pic-container {
+  width: 100%;
+}
+
+.card-pop .cards-pic {
+  width: 100%;
+}
+
+.flex-popup {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+.card-pop .section-about {
+  display: flex;
+  height: 32px;
+  width: 300px;
+  margin-top: 4px;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.card-pop .languages {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+  margin-left: -36px;
+}
+
+.card-pop .languages .javascript,
+.html,
+.css {
+  border-radius: 8px;
+  list-style: none;
+}
+
+.card-pop .languages li {
+  background-color: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #6070ff;
+}
+
+/* .card-pop button {
+  width: 49%;
+  height: 44px;
+  color: #6070ff;
+  background-color: white;
+  border-color: #6070ff;
+  border-radius: 10px;
+  border: 0.1rem solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-pop .btn-flex {
+  display: flex;
+  gap: 2%;
+}
+
+.card-pop .btn-flex1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 9%;
+}
+
+.card-pop button a {
+  color: #6070ff;
+} */

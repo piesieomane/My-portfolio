@@ -105,6 +105,8 @@ projects.forEach((element, i) => {
   });
 
   button.classList.add('see-btn');
+  //adding an id to the see-btn for every loop ***********
+  button.setAttribute('id', i);
   button.innerText = 'See Project';
 
   section.classList.add('cards');
@@ -118,4 +120,101 @@ projects.forEach((element, i) => {
 
   section.append(image, div);
   works.appendChild(section);
+});
+
+//the popup section ************
+const seeProjectBtn = document.querySelectorAll('.see-btn');
+const popupw = document.querySelector('.bg-popup');
+const realPopup = document.querySelector('.popup');
+
+seeProjectBtn.forEach((n) => {
+  n.addEventListener('click', (e) => {
+    const target_id = e.target.id;
+    const project = projects[target_id];
+
+    realPopup.innerHTML = `
+      <div class= 'card-pop'>
+      <div class = 'flex-popup'>
+        <h1 class="section-title">${project.name}</h1>
+        <img src="images/Icon-Cancel.png" class="xicon" alt="normal button" />
+        </div>
+        <div class="section-about">
+          <a href="#" class="size">CANOPY</a>
+          <img
+            src="images/Counter.png"
+            alt="Illustration of a dot 8"
+            class="size dot"
+          />
+          <h4 class="size back-end">Back End Dev</h4>
+          <img
+            src="images/Counter.png"
+            alt="Illustration of a dot 8"
+            class="size dot"
+          />
+          <h4 class="size date">2015</h4>
+        </div>
+        <div class = 'pic-container'>
+        <img
+            src=${project.img}
+            alt="card pic"
+            class="cards-pic"
+          />
+          </div>
+        <p>
+          ${project.description}
+        </p>
+         <ul class="languages">
+           <li class="${(function fun() {
+             projects.forEach((element, i) => {
+               projects[i].technologies.forEach((tech0, j) => {
+                 return (tech0 = projects[i].technologies[0]);
+               });
+             });
+           })()}">html</li>
+          
+          <li class="${(function fun() {
+            projects.forEach((element, i) => {
+              projects[i].technologies.forEach((tech1, j) => {
+                return (tech1 = projects[i].technologies[1]);
+              });
+            });
+          })()}">css</li>
+          
+          <li class="${(function fun() {
+            projects.forEach((element, i) => {
+              projects[i].technologies.forEach((tech2, j) => {
+                return (tech2 = projects[i].technologies[2]);
+              });
+            });
+          })()}">javascript</li>
+         </ul>
+
+         <div class = "btn-flex">
+         <button><a href='${
+           project.liveVersion
+         }' class = "btn-flex1" alt='Broken Link'>See Live <img
+         src="images/Icon-power.png"
+         alt="Illustration of a dot 8"
+         class="size dot"
+       /></a></button>
+         <button><a href='${
+           project.source
+         }' class = "btn-flex1" alt='Broken Link'>See Source <img
+         src="images/icon-github.png"
+         alt="Illustration of a dot 8"
+         class="size dot"
+       /></a></button>
+         </div>
+
+      </div>`;
+    popupw.append(realPopup);
+    popupw.classList.add('visible');
+
+    const xButton = document.querySelectorAll('.xicon');
+    xButton.forEach((n) => {
+      n.addEventListener('click', () => {
+        popupw.classList.remove('visible');
+      });
+    });
+  });
 });
