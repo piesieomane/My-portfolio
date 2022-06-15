@@ -138,6 +138,36 @@ section .icon-right {
   margin-left: 3px;
 }
 
+.card-pop button {
+  width: 49%;
+  height: 44px;
+  color: #6070ff;
+  background-color: white;
+  border-color: #6070ff;
+  border-radius: 10px;
+  border: 0.1rem solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-pop .btn-flex {
+  display: flex;
+  gap: 2%;
+}
+
+.card-pop .btn-flex1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 9%;
+}
+
+.card-pop button a {
+  color: #6070ff;
+}
+
 .card-pop .section-title {
   margin-top: -10px;
   margin-bottom: -21.44px;
@@ -519,6 +549,11 @@ section .icon-right {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .card-pop .cards-pic {
+    width: 100%;
+    height: 85%;
+  }
+
   .works .cards .cards-pic {
     width: 100%;
     object-fit: contain;
@@ -687,11 +722,6 @@ section .icon-right {
   height: 60%;
 }
 
-.card-pop .cards-pic {
-  width: 100%;
-  height: 85%;
-}
-
 .card-pop .flex-popup {
   display: flex;
   justify-content: space-between;
@@ -725,33 +755,3 @@ section .icon-right {
   font-size: 12px;
   color: #6070ff;
 }
-
-/* .card-pop button {
-  width: 49%;
-  height: 44px;
-  color: #6070ff;
-  background-color: white;
-  border-color: #6070ff;
-  border-radius: 10px;
-  border: 0.1rem solid;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-pop .btn-flex {
-  display: flex;
-  gap: 2%;
-}
-
-.card-pop .btn-flex1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  gap: 9%;
-}
-
-.card-pop button a {
-  color: #6070ff;
-} */

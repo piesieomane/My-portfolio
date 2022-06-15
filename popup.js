@@ -168,9 +168,9 @@ seeProjectBtn.forEach((n) => {
          <ul class="languages">
            <li class="${project.technologies[0]}">html</li>
           
-          <li class="${project.technologies[0]}">css</li>
+          <li class="${project.technologies[1]}">css</li>
           
-          <li class="${project.technologies[0]}">javascript</li>
+          <li class="${project.technologies[2]}">javascript</li>
          </ul>
 
          <div class = "btn-flex">
