@@ -189,6 +189,11 @@ section .icon-right {
   cursor: pointer;
 }
 
+.pic-container .cards-pic {
+  width: 100%;
+  height: 85%;
+}
+
 .works section .cards-pic {
   width: 100%;
 }
@@ -547,11 +552,6 @@ section .icon-right {
     max-width: 100%;
     column-gap: 3%;
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .card-pop .cards-pic {
-    width: 100%;
-    height: 85%;
   }
 
   .works .cards .cards-pic {
