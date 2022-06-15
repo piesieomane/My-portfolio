@@ -211,6 +211,15 @@ section .icon-right {
   line-height: 16px;
 }
 
+.section-about .size {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
 .works section .section-about {
   display: flex;
   height: 32px;
