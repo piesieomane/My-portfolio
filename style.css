@@ -662,6 +662,7 @@ section .icon-right {
 
 .popup {
   width: 90%;
+  height: 90vh;
 }
 
 .bg-popup.visible {
