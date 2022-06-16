@@ -225,40 +225,55 @@
           with it
         </p>
         <form
-          action="https://formspree.io/f/xvollloo"
+          action="https://formspree.io/f/xzbowqnl"
           id="form1"
           method="post"
           class="contact-form"
         >
-          <input
-            type="text"
-            class="field"
-            placeholder="Your Name"
-            name="text"
-            maxlength="30"
-            required
-          />
-          <input
-            type="email"
-            class="field"
-            placeholder="Your Email"
-            name="email"
-            maxlength="30"
-            required
-          />
-          <textarea
-            placeholder="Write your message here"
-            class="field"
-            name="textarea"
-            maxlength="500"
-            required
-          ></textarea>
-          <input id="contact-btn" value="Get It Touch" type="submit" />
+          <div class="input-control">
+            <input
+              type="text"
+              id="name"
+              placeholder="Your Name"
+              name="name"
+              maxlength="30"
+              required
+            />
+          </div>
+          <div class="input-control">
+            <input
+              type="email"
+              id="email"
+              placeholder="Your Email"
+              name="email"
+              maxlength="30"
+              required
+            />
+          </div>
+          <div class="input-control">
+            <textarea
+              placeholder="Write your message here"
+              id="message"
+              name="message"
+              maxlength="500"
+              required
+            ></textarea>
+          </div>
+          <div class="flex">
+            <input
+              id="contact-btn"
+              class="submit"
+              value="Get It Touch"
+              type="submit"
+            />
+            <div class="error"></div>
+          </div>
         </form>
         <img class="shape" src="images/Shape.png" alt="shape" />
       </footer>
     </section>
     <script src="menu.js"></script>
     <script src="popup.js"></script>
+    <script src="validate.js"></script>
   </body>
 </html>
