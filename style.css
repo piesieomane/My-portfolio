@@ -768,7 +768,11 @@ section .icon-right {
   color: #6070ff;
 }
 
-.input-control .error {
+.flex {
+  display: flex;
+}
+
+.error {
   color: #ff3434;
   font-size: 16px;
   margin: 0.5rem;
