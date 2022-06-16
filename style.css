@@ -413,7 +413,7 @@ section .icon-right {
   padding-left: 24px;
   padding-right: 24px;
   border-radius: 80px 0 0 0;
-  height: 760px;
+  height: 80%;
 }
 
 .contact-me footer h2 {
@@ -441,6 +441,7 @@ section .icon-right {
 }
 
 .contact-form input {
+  width: 100%;
   border-radius: 8px;
   border: none;
   outline: none;
@@ -456,6 +457,7 @@ section .icon-right {
 }
 
 .contact-form textarea {
+  width: 100%;
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -764,4 +766,10 @@ section .icon-right {
   font-weight: 500;
   font-size: 12px;
   color: #6070ff;
+}
+
+.input-control .error {
+  color: #ff3434;
+  font-size: 16px;
+  margin: 0.5rem;
 }

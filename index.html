@@ -230,29 +230,35 @@
           method="post"
           class="contact-form"
         >
-          <input
-            type="text"
-            class="field"
-            placeholder="Your Name"
-            name="text"
-            maxlength="30"
-            required
-          />
-          <input
-            type="email"
-            class="field"
-            placeholder="Your Email"
-            name="email"
-            maxlength="30"
-            required
-          />
-          <textarea
-            placeholder="Write your message here"
-            class="field"
-            name="textarea"
-            maxlength="500"
-            required
-          ></textarea>
+          <div class="input-control">
+            <input
+              type="text"
+              id="name"
+              placeholder="Your Name"
+              name="name"
+              maxlength="30"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <input
+              type="email"
+              id="email"
+              placeholder="Your Email"
+              name="email"
+              maxlength="30"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <textarea
+              placeholder="Write your message here"
+              id="message"
+              name="message"
+              maxlength="500"
+            ></textarea>
+            <div class="error"></div>
+          </div>
           <input id="contact-btn" value="Get It Touch" type="submit" />
         </form>
         <img class="shape" src="images/Shape.png" alt="shape" />
@@ -260,5 +266,6 @@
     </section>
     <script src="menu.js"></script>
     <script src="popup.js"></script>
+    <script src="validate.js"></script>
   </body>
 </html>
