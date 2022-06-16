@@ -21,7 +21,12 @@ const setSuccess = (element) => {
 
 const isEmailValid = (email) => {
   const regX = /^ ([a - z\d -] +)@([a - z\d -] +) \.([a - z]{ 2, 8 }) (\.[a - z]{ 2, 8 })?$ /;
-  return regX.test(String(email).toLowerCase());
+  return regX.test(String(email));
+};
+
+const isUpper = (email) => {
+  const reg = /[a-z]/.test(email) && /[A-Z]/.test(email);
+  return reg;
 };
 
 const validate = () => {
@@ -37,8 +42,13 @@ const validate = () => {
 
   if (emailValue === '') {
     setError(email, 'Email is required');
+    // return 0;
+  } else if (isUpper(emailValue)) {
+    setError(email, 'email should be in lowercase');
+    // return 0;
   } else if (isEmailValid(emailValue)) {
     setError(email, 'Provide a valid email address');
+    return 0;
   } else {
     setSuccess(email);
   }
@@ -47,7 +57,9 @@ const validate = () => {
     setError(messageForm, 'description is required');
   } else {
     setSuccess(messageForm);
+    return form.submit();
   }
+  return 0;
 };
 
 form.addEventListener('submit', (e) => {
